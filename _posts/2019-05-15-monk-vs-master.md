@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Monk versus Master"
-date:   2019-05-14 20:00:00 +0100
+date:   2019-05-15 20:00:00 +0100
 categories: senior engineer
 ---
 
