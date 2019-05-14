@@ -6,8 +6,8 @@ categories: jekyll blog github
 ---
 
 **Mission:** I wanted to start publishing my thoughts on a blog again. I already had one hosted on [blogger](https://salilwalavalkar.blogspot.com/) but wanted to try something new. Here were few of my requirements:
-- Ability to manage blog data on Github.
-- Switch from HTML based to Markdown.
+- Ability to manage blog data on Github (Command line FTW).
+- Switch from HTML based to Markdown (Improve my markdown in the process).
 - Static site for better performance.
 
-I stumbled upon [Jekyll](https://jekyllrb.com/). I found it much easier to manage my blog data with Jekyll than with Wordpress/Blogger. It has a lot of customizations which hopefully I wil discover along the way..
+I came across [Jekyll](https://jekyllrb.com/) on the interwebs. I found it much easier to manage my blog data with Jekyll than with Wordpress/Blogger. It has a lot of customizations which hopefully I will discover along the way..
