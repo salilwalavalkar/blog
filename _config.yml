@@ -16,7 +16,7 @@
 title: Salil Overflow
 email: salil.walavalkar@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This blog holds all the stuff that overflows from my brain.
+  This blog is a place to store all the stuff that overflows from my brain.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://salilwalavalkar.github.io/blog/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: SalilWalavalkar
