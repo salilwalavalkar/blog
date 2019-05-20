@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Monk versus Master"
-date:   2019-05-15 20:00:00 +0100
-categories: senior engineer
+date:   2019-05-15 20:00
+description: >-
+  Which one is better ?
+tags: [senior developer]
 ---
 
 This question has been asked to me a number of times by different folks over the years. Which one is better ? Someone who has spent significant amount of time at fewer companies/projects vs someone who has worked at many companies/projects over the same duration. There is no clear answer to this question, however this snippet always comes to my mind.

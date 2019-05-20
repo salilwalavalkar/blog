@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Moving to Jekyll based Github blog"
-date:   2019-05-14 09:00:00 +0100
-categories: jekyll blog github
+date:   2019-05-14 09:00:00
+description: >-
+  Transitioning from Blogger to Jekyll, Github
+tags: [jekyll, blog, github]
 ---
 
 **Mission:** I wanted to start publishing my thoughts on a blog again. I already had one hosted on [blogger](https://salilwalavalkar.blogspot.com/) but wanted to try something new. Here were few of my requirements:
