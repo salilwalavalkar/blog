@@ -6,7 +6,7 @@ description: >-
   How i discovered the Mind Palace
 tags: [mind palace, memory palace, sherlock holmes]
 ---
-![Sherlock Mind Palace](../images/sherlock_mind_palace.jpg)
+![Sherlock Mind Palace](../../../images/sherlock_mind_palace.jpg)
 
 ***Mind Palace*** —also referred to as the memory palace
 or [method of loci](https://en.wikipedia.org/wiki/Method_of_loci)—is a
