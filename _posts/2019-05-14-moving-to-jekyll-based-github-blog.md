@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Moving to Jekyll based Github blog"
-date:   2019-05-14 09:00:00
+date:   2019-05-14 10:00:00
 description: >-
   Transitioning from Blogger to Jekyll, Github
 tags: [jekyll, blog, github]
