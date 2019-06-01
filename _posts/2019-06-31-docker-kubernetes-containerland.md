@@ -1,13 +1,11 @@
 ---
 layout: post
 title:  "Docker in Containerland™"
-date:   2019-05-15 20:00
+date:   2019-06-31 20:00
 description: >-
   It's all a simple box
 tags: [docker, kubernetes, containers, devops]
 ---
-
-# Docker in Containerland™
 
 ![Containerland](../../../images/containers.jpg)
 
