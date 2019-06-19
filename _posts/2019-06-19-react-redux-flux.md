@@ -6,7 +6,7 @@ description: >-
   A short story on the evolution of Redux for state management.
 tags: [react, redux, flux wars, state management]
 ---
-<p align="center"><<img src="../../../images/flux.png" alt="Flux" width="100" height="100"/></p>
+<p align="center"><img src="../../../images/flux.png" alt="Flux" width="100" height="100"/></p>
 
 A little history lesson first. [React JS](https://reactjs.org/) was introduced in 2014 right in the middle of Flux Wars. The [Flux Pattern](https://facebook.github.io/flux/docs/overview.html) was a recommended pattern for all state management. Obviously, many developers created their own libraries of the pattern and touted them as best. This was in gist the Flux Wars.
 
@@ -18,7 +18,7 @@ A little history lesson first. [React JS](https://reactjs.org/) was introduced i
 
 In 2017-2018 the new [React Context API](https://reactjs.org/docs/context.html), [Apollo Client](https://www.apollographql.com/docs/react/) and a few alternatives were introduced which started solving problems that Redux was originally built for. Since Redux had gained so much dominance it was an easy target for people to say it was finished.
 
-<p align="center"><img src="../../../images/pitchforks.jpg" alt="Pitchforks" width="640" height="480"/></p>
+<p align="center"><img src="../../../images/pitchforks.jpg" alt="Pitchforks" width="320" height="240"/></p>
 
 **So, should I use Redux?**
 
