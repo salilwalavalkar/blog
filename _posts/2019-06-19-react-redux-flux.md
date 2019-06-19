@@ -7,7 +7,8 @@ description: >-
 tags: [react, redux, flux wars, state management]
 ---
 
-![Flux Wars](../../../images/flux.png)
+<!--![Flux Wars](../../../images/flux.png)-->
+<img src="{site.url/images/flux.png" width="200" height="200" align="center"/>
 
 A little history lesson first. [React JS](https://reactjs.org/) was introduced in 2014 right in the middle of Flux Wars. The [Flux Pattern](https://facebook.github.io/flux/docs/overview.html) was a recommended pattern for all state management. Obviously, many developers created their own libraries of the pattern and touted them as best. This was in gist the Flux Wars.
 
