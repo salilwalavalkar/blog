@@ -7,15 +7,15 @@ description: >-
 tags: [react, redux, flux wars, state management]
 ---
 
-![Flux Wars](../../../images/flux.jpg)
+![Flux Wars](../../../images/flux.png)
 
 A little history lesson first. [React JS](https://reactjs.org/) was introduced in 2014 right in the middle of Flux Wars. The [Flux Pattern](https://facebook.github.io/flux/docs/overview.html) was a recommended pattern for all state management. Obviously, many developers created their own libraries of the pattern and touted them as best. This was in gist the Flux Wars.
 
-![Redux](../../../images/redux.jpg)
+![Redux](../../../images/redux.png)
 
 [Redux](https://redux.js.org/) won the war around 2015-2016 due to its simplicity and leadership of [Dan Abramov](https://egghead.io/courses/getting-started-with-redux) and there was peace. Long live the King!!
 
-![Peace](../../../images/peace.jpg)
+![Peace](../../../images/peace.png)
 
 In 2017-2018 the new [React Context API](https://reactjs.org/docs/context.html), [Apollo Client](https://www.apollographql.com/docs/react/) and a few alternatives were introduced which started solving problems that Redux was originally built for. Since Redux had gained so much dominance it was an easy target for people to say it was finished.
 
