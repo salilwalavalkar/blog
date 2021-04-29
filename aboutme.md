@@ -12,7 +12,7 @@ published: true
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-I currently work as a Team Lead (Technology) at <a href="https://www.accenture.com/gb-en" target="_blank">Accenture, UK</a>. Previously, I have worked at <a href="https://www.digite.com/" target="_blank">Digité'</a> as a Senior Software Engineer.</p>
+I currently work as a Senior Software Engineer at  <a href="https://www.viasat.com/" target="_blank">Viasat Inc</a>, Dublin, Ireland. Previously, I have worked as a Team Lead (Technology) at <a href="https://www.accenture.com/gb-en" target="_blank">Accenture, UK</a> and at <a href="https://www.digite.com/" target="_blank">Digité'</a> as a Senior Software Engineer.</p>
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
