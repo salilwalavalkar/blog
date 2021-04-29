@@ -12,7 +12,7 @@ published: true
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-I currently work as a Senior Software Engineer at  <a href="https://www.viasat.com/" target="_blank">Viasat Inc</a>, Dublin, Ireland. Previously, I have worked as a Team Lead (Technology) at <a href="https://www.accenture.com/gb-en" target="_blank">Accenture, UK</a> and at <a href="https://www.digite.com/" target="_blank">Digité'</a> as a Senior Software Engineer.</p>
+I currently work as a Senior Software Engineer at  <a href="https://www.viasat.com/" target="_blank">Viasat Inc</a>, Dublin, Ireland. Previous roles were at <a href="https://www.accenture.com/gb-en" target="_blank">Accenture, UK</a> and <a href="https://www.digite.com/" target="_blank">Digité'</a></p>
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
@@ -26,7 +26,7 @@ I am a national level <a href="https://www.instagram.com/p/BfVxJpWhRxE" target="
 
 <p class="about-text">
 <span class="fa fa-globe about-icon"></span>
-I am an avid <a href="https://www.instagram.com/salilwalavalkar" target="_blank">traveller</a> having gone around India, UK, Europe and Northern Ireland.
+Lived and travelled across India, United Kingdom, Northern Ireland, Europe and Republic of Ireland.
 
 </p>
 </div>
