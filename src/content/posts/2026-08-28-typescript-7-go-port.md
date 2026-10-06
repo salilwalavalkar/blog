@@ -3,7 +3,7 @@ title: "TypeScript 7: JavaScript's Type Checker Finally Stopped Using JavaScript
 description: "The fastest way to speed up a JavaScript tool, it turns out, is to stop writing it in JavaScript."
 pubDatetime: 2026-08-28T09:00:00Z
 tags: ["typescript", "go", "compilers", "tooling", "rants"]
-draft: true
+draft: false
 sourceUrl: "https://softwareengineeringdaily.com/podcasts/typescript-7-and-what-comes-next/"
 ---
 
