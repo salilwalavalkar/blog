@@ -27,6 +27,6 @@ Images: put them in `src/assets/images/` and reference them as `![alt](@/assets/
 | `pnpm build`   | Production build to `./dist/`        |
 | `pnpm preview` | Preview the production build         |
 
-Pushing to `gh-pages` deploys the site via `.github/workflows/deploy.yml`.
+Pushing to `master` deploys the site via `.github/workflows/deploy.yml`.
 
 Site settings (title, socials, etc.) live in `astro-paper.config.ts`.
