@@ -1,0 +1,70 @@
+---
+/**
+ * Renders ```mermaid code blocks as diagrams on the client.
+ * Mermaid is only downloaded on pages that actually contain a diagram,
+ * and diagrams are re-rendered when the light/dark theme changes.
+ */
+---
+
+<script>
+  type MermaidApi = typeof import("mermaid").default;
+
+  let mermaidPromise: Promise<MermaidApi> | undefined;
+  let themeObserver: MutationObserver | undefined;
+
+  const loadMermaid = () =>
+    (mermaidPromise ??= import("mermaid").then(m => m.default));
+
+  const currentTheme = () =>
+    document.documentElement.getAttribute("data-theme") === "dark"
+      ? "dark"
+      : "default";
+
+  async function renderDiagrams() {
+    // Turn untouched code blocks into diagram containers, keeping the source.
+    document
+      .querySelectorAll<HTMLElement>("pre > code.language-mermaid")
+      .forEach(code => {
+        const container = document.createElement("div");
+        container.className =
+          "mermaid-diagram not-prose my-6 flex justify-center";
+        container.dataset.source = code.textContent ?? "";
+        code.parentElement!.replaceWith(container);
+      });
+
+    const diagrams = document.querySelectorAll<HTMLElement>(
+      ".mermaid-diagram[data-source]"
+    );
+    if (diagrams.length === 0) return;
+
+    const mermaid = await loadMermaid();
+    mermaid.initialize({ startOnLoad: false, theme: currentTheme() });
+
+    for (const [i, el] of diagrams.entries()) {
+      try {
+        const { svg } = await mermaid.render(
+          `mermaid-${Date.now()}-${i}`,
+          el.dataset.source!
+        );
+        el.innerHTML = svg;
+      } catch {
+        // Invalid diagram syntax: fall back to showing the source.
+        el.innerHTML = "";
+        const pre = document.createElement("pre");
+        pre.textContent = el.dataset.source!;
+        el.append(pre);
+      }
+    }
+  }
+
+  document.addEventListener("astro:page-load", () => {
+    renderDiagrams();
+
+    themeObserver?.disconnect();
+    themeObserver = new MutationObserver(renderDiagrams);
+    themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  });
+</script>
