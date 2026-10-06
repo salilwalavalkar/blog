@@ -1,41 +1,63 @@
 ---
-title: "Breaking the CAP theorem - Google Spanner"
+title: 'Google Spanner "Breaks" the CAP Theorem (Terms and Conditions Apply)'
 pubDatetime: 2019-09-12T20:00:00Z
-description: 'Why Google Spanner is advertised as "breaking the CAP theorem" ?'
+description: "Spanner doesn't break CAP. Google just owns a network good enough to make you forget about it."
 tags:
   - google spanner
   - google
   - cap theorem
 ---
 
-A few days back, I listened to this good podcast episode by [Deepthi Srivastava](https://twitter.com/TheDeepti) on [Google Spanner](https://cloud.google.com/spanner/)
+_Originally published in September 2019. Rewritten in October 2026, with more sarcasm and fewer exclamation marks._
+
+This started with a podcast episode with [Deepti Srivastava](https://x.com/TheDeepti) on [Google Spanner](https://cloud.google.com/spanner):
 
 <blockquote class="twitter-tweet"><p lang="et" dir="ltr">Google Spanner with Deepti Srivastava <a href="https://twitter.com/TheDeepti?ref_src=twsrc%5Etfw">@TheDeepti</a> <a href="https://twitter.com/googlecloud?ref_src=twsrc%5Etfw">@GoogleCloud</a> <a href="https://twitter.com/GCPcloud?ref_src=twsrc%5Etfw">@GCPcloud</a> <a href="https://twitter.com/googledevs?ref_src=twsrc%5Etfw">@googledevs</a> <a href="https://t.co/ygoBhUTJ0z">https://t.co/ygoBhUTJ0z</a> <a href="https://t.co/6TjPfsLrOO">pic.twitter.com/6TjPfsLrOO</a></p>&mdash; Software Daily (@software_daily) <a href="https://twitter.com/software_daily/status/1171348845323849728?ref_src=twsrc%5Etfw">September 10, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I had looked into Spanner some time back for a POC where I was trying to find out how it works with the CAP Theorem. Google has some good [whitepapers](https://cloud.google.com/spanner/docs/whitepapers) on the topic.
+## The 30-Second Reality Check
 
-The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) of distributed computing states that there are three guarantees to consider with distributed state systems;
+The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) says that when the network splits, a distributed database has to choose: stay **C**onsistent or stay **A**vailable. Spanner doesn't break that rule. It's a CP system running on a private network so reliable that partitions almost never happen, so it gets to _act_ like CA.
 
-- **Consistency**: all clients have the same, most recent data view
+## Explain With Pictures
 
-- **Availability**: all clients can read and write, regardless of data recency
+```mermaid
+flowchart TB
+  P{"Network partition<br/>happens"}
+  P -- "choose C" --> CP["CP: return an error<br/>rather than stale data<br/>(MongoDB, Spanner)"]
+  P -- "choose A" --> AP["AP: answer anyway,<br/>maybe with stale data<br/>(Cassandra)"]
+  N["No partition<br/>(the 99.999% case)"] --> CA["Consistent AND available<br/>(what Spanner users actually see)"]
+```
 
-- **Partition Tolerance**: the system's guarantees hold even in the face of network faults between each distributed system node
+The trick isn't in the algorithm. It's in making the left-hand box so rare that nobody notices which way you'd choose.
 
-And, more importantly, it's physically impossible for a distributed system to have all three of these; at best a perfectly designed system can have two, and most systems are not perfectly designed.
+## 3 Hot Takes & Quotes
 
-And, finally: No distributed state store is "safe" from partition tolerance. What the CAP theorem actually means in practice is that a truly distributed state system can choose:
+**1. The man who coined CAP says Spanner doesn't break it.**
 
-- CP: In the face of a partition, remain consistent. Return an error instead of trying to read or write.
+> The purist answer is "no" because partitions can happen and in fact have happened at Google, and during some partitions, Spanner chooses C and forfeits A. It is technically a CP system. — Eric Brewer, 2017
 
-- AP: In the face of a partition, remain available. Return the most recently written data that the node the client queries knows about. For writes, try to reconcile them best the system can after the partition is resolved.
+When the person whose name is on the theorem writes a blog post explaining your marketing, the marketing was doing some heavy lifting. "Breaks CAP" really means "we're CP, and we're very good at networks".
 
-Basic deployments of RDBMS are, usually, CA. So, they're not actually distributed systems, because everything goes out the window in the face of a network partition; you have a master node with slave replicas, and if a partition happens between the master and slaves, the slaves might elect a new master, so your system enters a "split brain" scenario where its not clear which one is right.
+**2. The real innovation is owning the network.**
 
-Any RDBMS worth its salt has modes it can be deployed in which aren't CA. Depending on the RDBMS you can select CP or AP. This is also how pretty much every other database operates. Mongo is CP; it will prefer consistency. Cassandra is AP; it will prefer availability, and possibly return stale data.
+> In practice, we find that Spanner does meet this bar, with more than five 9s of availability (less than one failure in 10⁵). — Eric Brewer, 2017
 
-Spanner is a globally distributed SQL database. Well, technically it isn't really SQL due to some minor constraints, but in practice it is SQL.
+Spanner's secret sauce is Google's private, redundant global network, plus synchronized clocks (TrueTime) so nodes can agree on the order of events. You can't `npm install` a private fibre network. "Just do what Google does" is cheap advice when the first step is "own the planet's backbone".
 
-In some of Google's marketing, Spanner is advertised as "breaking the CAP theorem", because it can reliably offer consistency and availability in the face of network partitions, despite being highly distributed. But they aren't being deceitful; they're upfront about its real technical limitations: It is technically CP, with an availability guarantee in the face of partitions that is so close to 100% that it shouldn't matter even at Google's scale.
+**3. Your single-server database was never in this fight.**
 
-The reason for this is less about software and more about hardware. In effect, they say that because Spanner runs on their internal, redundant, global private network, network partitions are exceedingly rare. Moreover, some of the core design decisions of Spanner rely on all nodes having a highly consistent internal clock. So even in the face of true network partitions, there are decisions nodes can make based on the globally consistent clock which push the availability statistics even higher.
+> Basic deployments of RDBMS are, usually, CA. So, they're not actually distributed systems — me, 2019
+
+A primary database with read replicas isn't beating CAP either. It's skipping the question until the day the network splits, the replicas elect a new primary, and you get two databases that each think they're in charge. That's not CA. That's an incident with a delay.
+
+## The Post-Mortem / Verdict
+
+Spanner is a great database and an even better marketing case study. CAP still holds. Google just made partitions so rare that, in practice, users can treat it as CA. Brewer's own summary: "no" technically, but "yes" in effect. If you don't own a planet-scale private network, pick C or A deliberately, before a partition picks for you.
+
+## Links & References
+
+- [Google Spanner with Deepti Srivastava](https://twitter.com/software_daily/status/1171348845323849728), Software Engineering Daily, September 2019; [Deepti Srivastava on X](https://x.com/TheDeepti)
+- [Spanner: TrueTime and the CAP Theorem](https://research.google/pubs/spanner-truetime-and-the-cap-theorem/), Eric Brewer, Google Research
+- [Inside Cloud Spanner and the CAP Theorem](https://cloud.google.com/blog/products/databases/inside-cloud-spanner-and-the-cap-theorem), Eric Brewer, Google Cloud blog, February 2017
+- [Google Cloud Spanner](https://cloud.google.com/spanner) and its [whitepapers](https://cloud.google.com/spanner/docs/whitepapers)
+- [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) on Wikipedia

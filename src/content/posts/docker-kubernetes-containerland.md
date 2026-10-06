@@ -1,7 +1,7 @@
 ---
-title: "Docker in Containerland™"
+title: "Docker in Containerland™: It's Still Just a Box"
 pubDatetime: 2019-05-31T20:00:00Z
-description: "It's all a simple box"
+description: "Docker puts your app in a box. Kubernetes moves the boxes. Everything else is YAML."
 tags:
   - docker
   - kubernetes
@@ -9,28 +9,57 @@ tags:
   - devops
 ---
 
+_Originally published in May 2019. Rewritten in October 2026, with more sarcasm and fewer exclamation marks._
+
 ![Containerland](@/assets/images/containers.jpg)
 
-Docker recently [turned 6](https://blog.docker.com/2019/02/22757/). I have been using it for a few years now and have followed its evolution. It does take a bit of time to wrap your head around it. But once you get a basic understanding you will start using it for all your future deployments.
+## The 30-Second Reality Check
 
-#### So, what is Docker?
+Docker puts your app and everything it depends on into a box, so it runs the same on any machine. [Kubernetes](https://kubernetes.io/) notices when a machine dies and moves the boxes somewhere else. Everything else in "cloud native" is YAML, conference talks and logos.
 
-Docker is a way to put your application and all of its dependencies in a box (or container). Move the box from one machine to another and the app runs since it’s all contained in the box.
+## Explain With Pictures
 
-Some apps are complex and depend on other apps. For instance, a web server and a database. The web server and all its dependencies are in a box. The database and all its dependencies are in another box. You can either start these boxes independently or more easily use a compose file and start them in a choreographed manner. More complex apps may have 4 or 5 boxes. Using a single command with compose is more consistent and simpler than 5 complex commands.
+```
+  One machine (docker compose)        Many machines (Kubernetes)
 
-Imagine now that you have multiple physical servers to run these apps. If a server fails you can go figure out which boxes were running there or you can let the software ([Swarm](https://docs.docker.com/engine/swarm/), [Kubernetes](https://kubernetes.io/), etc) figure it out for you.
+  +---------------------------+       +---------+  +---------+  +---------+
+  |  [ web ]  [ db ]  [cache] |       | [web]   |  | [web]   |  |  [db]   |
+  |                           |       | [cache] |  |         |  |   ^     |
+  |  "docker compose up"      |       +---------+  +----X----+  +---|-----+
+  +---------------------------+                         |           |
+                                          node dies --> +-- [web] --+
+  Your laptop. Happy.                   Kubernetes moves the box. You sleep.
+```
 
-Note: box == container == application in this example.
+The box is easy. The hard part is everything about _where the boxes run_, and that's the part you pay for in complexity.
 
-#### What about running in production?
+## 3 Hot Takes & Quotes
 
-I would recommend to use docker-compose for local development and Swarm/Kubernetes in production. Compose works fine for single machines, and there’s nothing wrong with using it in small scale production but once you move to multiple machines, that’s when you need container orchestration. Docker Swarm does that, but it’s not very sophisticated. It will take a compose file, so it’s an easy move.
+**1. Half of my 2019 advice aged well.**
 
-[Kubernetes](https://kubernetes.io/) really came before swarm. Google basically took Borg and improved it for Kubernetes. It is a beast, but it’s a glorious beast. You don’t need to use all of it but you are well served in using it and learning it. If you want to translate those docker skills into devops, kubernetes is it.
+> I would recommend to use docker-compose for local development and Swarm/Kubernetes in production. — me, 2019
 
-Rewriting a docker compose file for kubernetes isn’t a big deal. Once you know why every line is there in the compose file, you’ll know how to add them to your kubernetes configs.
+Compose for local dev: still right. "Swarm/Kubernetes" in production: the industry has since voted, and it wasn't for the slash. [Swarm](https://docs.docker.com/engine/swarm/) still exists, but Kubernetes became the default for orchestration. Hedging between two tools in a recommendation is how you know it was written before the war ended.
 
-#### How do I share the docker images within a secure environment?
+**2. Kubernetes is still a beast. You just don't need to ride all of it.**
 
-You might not be able to push the images to a centralized server in a secure environment. However to test out with colleagues, you can do a docker save/ docker load and transfer via ssh/scp over your internal network or use a subversion repo.
+> It is a beast, but it's a glorious beast. You don't need to use all of it but you are well served in using it and learning it. — me, 2019
+
+Still true, with one upgrade: most teams don't need to _run_ the beast at all. If your whole product is three containers and a database, a managed platform beats a hand-rolled cluster. You don't get extra credit for operating your own control plane.
+
+**3. The sneakernet never dies.**
+
+> you can do a docker save/ docker load and transfer via ssh/scp over your internal network — me, 2019
+
+In locked-down networks, the most advanced container workflow in the world still ends with someone copying a tarball over SSH. Every "secure environment" eventually rediscovers the floppy disk.
+
+## The Post-Mortem / Verdict
+
+Docker turned "works on my machine" into "ships my machine", which turned out to be good enough to change the industry. Learn the box first. Reach for Kubernetes when you have more boxes than you can babysit, not because a job ad said so.
+
+## Links & References
+
+- [Docker turns 6](https://web.archive.org/web/20190917071245/https://blog.docker.com/2019/02/22757/), Docker blog, 2019 (archived copy; the original link is gone)
+- [Docker Compose documentation](https://docs.docker.com/compose/)
+- [Docker Swarm mode documentation](https://docs.docker.com/engine/swarm/)
+- [Kubernetes](https://kubernetes.io/)
