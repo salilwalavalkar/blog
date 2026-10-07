@@ -1,5 +1,5 @@
 ---
-title: "TypeScript 7: JavaScript's Type Checker Finally Stopped Using JavaScript"
+title: "JavaScript's Type Checker Finally Stopped Using JavaScript"
 description: "The fastest way to speed up a JavaScript tool, it turns out, is to stop writing it in JavaScript."
 pubDatetime: 2026-08-28T09:00:00Z
 tags: ["typescript", "go", "compilers", "tooling", "rants"]
@@ -11,7 +11,7 @@ Notes on [Software Engineering Daily: TypeScript 7 and What Comes Next](https://
 
 ## The 30-Second Reality Check
 
-TypeScript 7 is the compiler ported line-by-line from TypeScript to Go, and it's "often a 10X speed up". The catch: if your setup leans on the compiler API (Vue, Angular, Astro, language server plugins), the fast new version mostly isn't for you until 7.1.
+TypeScript 7 is the compiler ported line by line from TypeScript to Go, and it's "often a 10X speed up". But if you lean on the compiler API (Vue, Angular, Astro, editor plugins), you're mostly waiting for 7.1.
 
 ## Explain With Pictures
 
@@ -42,11 +42,11 @@ Same compiler logic, new language, and one new wall: tools no longer share the c
 
 > We've been describing this more as a port, because we've been looking basically on the left side of the screen, right side of the screen. One side is TypeScript. The other side is the Go that we're converting to.
 
-Every engineer who has pitched a "quick rewrite" and come back 18 months later with half the features should frame this. The TypeScript team didn't redesign anything. They transliterated, file by file, and pulled the speed from Go and from parallelism, not from cleverness. Boring is the feature. Your "we'll fix the architecture while we're in there" plan is the bug.
+Every engineer who has pitched a "quick rewrite" and come back 18 months later with half the features should frame this. The TypeScript team didn't redesign anything. They transliterated, file by file, and got the speed from Go and from parallelism. No cleverness required. Meanwhile your "we'll fix the architecture while we're in there" plan is exactly how the 18 months happen.
 
 **2. JavaScript tooling is now written in everything except JavaScript.**
 
-> The up and coming very fast, very integrated Linter, OXlint, is built on Rust, but its TypeScript integration is this thing called tsgolint — Josh Goldberg
+> The up and coming very fast, very integrated Linter, OXlint, is built on Rust, but its TypeScript integration is this thing called tsgolint (Josh Goldberg)
 
 So a Rust linter calls a Go type checker to check TypeScript, with custom rules written in TypeScript. Three languages to lint one. The JS ecosystem's big performance breakthrough was quietly admitting that JS wasn't the right tool to build JS tools. Fine. Just stop pretending your `node_modules` is a monoculture.
 
@@ -64,9 +64,9 @@ A process boundary is the only API review board nobody can bypass. The cost is t
 
 Credit where due: a 10x speedup that also ships fewer crashes is rare enough that the host said it out loud.
 
-> it's not only better, it's less crashy. — Daniel Rosenwasser
+> it's not only better, it's less crashy. (Daniel Rosenwasser)
 >
-> What a rare treat to hear in this day and age of software. — Josh Goldberg
+> What a rare treat to hear in this day and age of software. (Josh Goldberg)
 
 The practical answer, straight from the source: if you're on TypeScript 6.0 with no editor plugins and no Vue or Angular, "it's very likely that you can just start running TypeScript 7 today." Everyone else gets to run 6 and 7 side by side and refresh the GitHub threads about the API.
 

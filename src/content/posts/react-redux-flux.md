@@ -15,7 +15,7 @@ _Originally published in June 2019. Rewritten in October 2026, with more sarcasm
 
 ## The 30-Second Reality Check
 
-[Flux](https://web.archive.org/web/20190406233000/https://facebook.github.io/flux/docs/overview.html) was a pattern, so everyone shipped their own library of it. [Redux](https://redux.js.org/) won those "Flux Wars" by being tiny, predictable and boring. Then React added [Context](https://legacy.reactjs.org/docs/context.html), [Apollo Client](https://www.apollographql.com/docs/react/) showed up, and the internet started holding Redux funerals. Redux has attended every one of them.
+[Flux](https://web.archive.org/web/20190406233000/https://facebook.github.io/flux/docs/overview.html) was a pattern, so everyone shipped their own library. [Redux](https://redux.js.org/) won by being small and boring. Then React added [Context](https://legacy.reactjs.org/docs/context.html), [Apollo](https://www.apollographql.com/docs/react/) showed up, and people kept holding Redux funerals. Redux went to all of them.
 
 ## Explain With Pictures
 
@@ -50,7 +50,7 @@ Redux removed the dispatcher, merged the stores into one and made state changes 
 
 **1. Boring won the war. It always does.**
 
-> Redux won the war around 2015-2016 due to its simplicity and leadership of Dan Abramov and there was peace. Long live the King!! — me, 2019
+> Redux won the war around 2015-2016 due to its simplicity and leadership of Dan Abramov and there was peace. Long live the King!! (me, 2019)
 
 Redux's whole idea fits on a napkin: state is a value, actions describe changes, a pure function applies them. [Dan Abramov's free Egghead course](https://egghead.io/courses/fundamentals-of-redux-course-from-dan-abramov-bd5cc867) taught it in bite-sized videos. Every competing Flux library had more features. That was the problem.
 
@@ -58,7 +58,7 @@ Redux's whole idea fits on a napkin: state is a value, actions describe changes,
 
 **2. "Redux is dead" is a genre, not a fact.**
 
-> Since Redux had gained so much dominance it was an easy target for people to say it was finished. — me, 2019
+> Since Redux had gained so much dominance it was an easy target for people to say it was finished. (me, 2019)
 
 Being declared dead is what happens to anything popular enough to be boring. Meanwhile, huge production apps quietly keep running on it, because rewriting your state layer to follow a Twitter thread is not a business plan.
 
@@ -66,13 +66,13 @@ Being declared dead is what happens to anything popular enough to be boring. Mea
 
 **3. Most apps never needed it in the first place.**
 
-> Redux is a bit overkill for simple data management and UI needs which is the requirement for most of the projects. — me, 2019
+> Redux is a bit overkill for simple data management and UI needs which is the requirement for most of the projects. (me, 2019)
 
-The real crime was never Redux. It was wiring a global store, actions, reducers and middleware into a to-do app because a tutorial said "this is how React is done". Architecture should arrive when the pain does, not before.
+What actually hurt was wiring a global store, actions, reducers and middleware into a to-do app because a tutorial said "this is how React is done". Architecture should arrive when the pain does, not before.
 
 ## The Post-Mortem / Verdict
 
-> Today's pattern will be different tomorrow. — me, 2019
+> Today's pattern will be different tomorrow. (me, 2019)
 
 Still the best line I wrote in that post. My jQuery components from the AJAX era were cutting edge too. Build something people care about; they won't ask which state library you used. If you succeed, you can refactor later. If you don't, the state library was never the problem.
 

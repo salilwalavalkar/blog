@@ -1,5 +1,5 @@
 ---
-title: "Monk vs Master: Ten Years of Experience, or One Year Ten Times?"
+title: "Monk vs Master (Ten Years of Experience, or One Year Ten Times?)"
 pubDatetime: 2019-05-15T20:00:00Z
 description: "Job-hopper or lifer? Wrong question. Count the distinct mistakes."
 tags:
@@ -10,7 +10,7 @@ _Originally published in May 2019. Rewritten in October 2026, with more sarcasm 
 
 ## The 30-Second Reality Check
 
-People keep asking me who's better: the engineer who stayed at a few companies for years, or the one who hopped between many. Neither. What counts is how many _different_ mistakes you've made, and a koan from [The Codeless Code](https://thecodelesscode.com/case/100) says it better than any hiring rubric.
+People ask me who's better, the engineer who stayed put for years or the one who hopped jobs. Neither, really. I care how many _different_ mistakes you've made, and a koan from [The Codeless Code](https://thecodelesscode.com/case/100) agrees.
 
 ## Explain With Pictures
 
@@ -48,13 +48,13 @@ That's the engineer with "15 years of experience" who has really had one year of
 
 > The novice, not understanding, sought to avoid all error. An abbot observed and brought the novice to Banzen for correction.
 
-Teams that punish failure don't get fewer mistakes. They get _hidden_ mistakes, plus engineers who never touch anything risky. That's why blameless post-mortems exist: the abbot was running one before it was cool.
+Teams that punish failure end up with the same number of mistakes, just _hidden_ ones, plus engineers who never touch anything risky. That's why blameless post-mortems exist: the abbot was running one before it was cool.
 
 **3. Even the gods ship bugs.**
 
 > Banzen explained: "I have made ten thousand mistakes; Suku has made ten thousand mistakes; the patriarchs of Open Source have each made ten thousand mistakes."
 
-Every maintainer you admire has a commit history full of reverts. Look up any famous project's "fix the fix" commits. Mastery isn't a clean record; it's a long one.
+Every maintainer you admire has a commit history full of reverts. Look up any famous project's "fix the fix" commits. Mastery looks like a long record. A spotless one is a bit suspicious.
 
 ## The Post-Mortem / Verdict
 

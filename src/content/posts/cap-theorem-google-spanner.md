@@ -16,7 +16,7 @@ This started with a podcast episode with [Deepti Srivastava](https://x.com/TheDe
 
 ## The 30-Second Reality Check
 
-The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) says that when the network splits, a distributed database has to choose: stay **C**onsistent or stay **A**vailable. Spanner doesn't break that rule. It's a CP system running on a private network so reliable that partitions almost never happen, so it gets to _act_ like CA.
+The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) says that when the network splits, a database picks consistency or availability. Spanner still picks consistency. Google's private network just fails so rarely that it looks like you get both.
 
 ## Explain With Pictures
 
@@ -28,27 +28,27 @@ flowchart TB
   N["No partition<br/>(the 99.999% case)"] --> CA["Consistent AND available<br/>(what Spanner users actually see)"]
 ```
 
-The trick isn't in the algorithm. It's in making the left-hand box so rare that nobody notices which way you'd choose.
+The clever part has little to do with the algorithm. Google made the partition box so rare that hardly anyone gets to see which way Spanner goes.
 
 ## 3 Hot Takes & Quotes
 
 **1. The man who coined CAP says Spanner doesn't break it.**
 
-> The purist answer is "no" because partitions can happen and in fact have happened at Google, and during some partitions, Spanner chooses C and forfeits A. It is technically a CP system. — Eric Brewer, 2017
+> The purist answer is "no" because partitions can happen and in fact have happened at Google, and during some partitions, Spanner chooses C and forfeits A. It is technically a CP system. (Eric Brewer, 2017)
 
 When the person whose name is on the theorem writes a blog post explaining your marketing, the marketing was doing some heavy lifting. "Breaks CAP" really means "we're CP, and we're very good at networks".
 
 **2. The real innovation is owning the network.**
 
-> In practice, we find that Spanner does meet this bar, with more than five 9s of availability (less than one failure in 10⁵). — Eric Brewer, 2017
+> In practice, we find that Spanner does meet this bar, with more than five 9s of availability (less than one failure in 10⁵). (Eric Brewer, 2017)
 
 Spanner's secret sauce is Google's private, redundant global network, plus synchronized clocks (TrueTime) so nodes can agree on the order of events. You can't `npm install` a private fibre network. "Just do what Google does" is cheap advice when the first step is "own the planet's backbone".
 
 **3. Your single-server database was never in this fight.**
 
-> Basic deployments of RDBMS are, usually, CA. So, they're not actually distributed systems — me, 2019
+> Basic deployments of RDBMS are, usually, CA. So, they're not actually distributed systems (me, 2019)
 
-A primary database with read replicas isn't beating CAP either. It's skipping the question until the day the network splits, the replicas elect a new primary, and you get two databases that each think they're in charge. That's not CA. That's an incident with a delay.
+A primary database with read replicas isn't beating CAP either. It's skipping the question until the day the network splits, the replicas elect a new primary, and you get two databases that each think they're in charge. You can call that CA if you like. I'd call it an incident on a timer.
 
 ## The Post-Mortem / Verdict
 
