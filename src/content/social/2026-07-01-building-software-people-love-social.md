@@ -1,5 +1,5 @@
 ---
-title: "Social Posts: Building Software People Love: Step One, Ship an Ugly App"
+title: "Social Posts: Building Software People Love Starts With an Ugly App"
 date: "2026-07-01"
 blog_url: "https://salilwalavalkar.github.io/blog/posts/2026-07-01-building-software-people-love/"
 ---
@@ -10,7 +10,7 @@ The studio behind work for Slack and Uber says the secret to delightful software
 
 ## 🧵 Threads
 
-Metalab's VP of Engineering on how they build software people love. Spoiler: they spend more time talking clients _out_ of delightful features than into them.
+Metalab's VP of Engineering on how they build software people love. Apparently they spend more time talking clients _out_ of delightful features than into them.
 
 Their first versions are "ugly apps": the whole flow end to end, with some screens that just render JSON and a button. Clients get confused by the curly brackets, then start reordering screens and fixing the flow before anyone picks a font.
 

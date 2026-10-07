@@ -1,5 +1,5 @@
 ---
-title: "Social Posts: TypeScript 7: JavaScript's Type Checker Finally Stopped Using JavaScript"
+title: "Social Posts: JavaScript's Type Checker Finally Stopped Using JavaScript"
 date: "2026-08-28"
 blog_url: "https://salilwalavalkar.github.io/blog/posts/2026-08-28-typescript-7-go-port/"
 ---

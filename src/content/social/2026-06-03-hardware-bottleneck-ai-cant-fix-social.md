@@ -1,5 +1,5 @@
 ---
-title: "Social Posts: The Hardware Bottleneck AI Can't Fix: You Can't Unit Test a Rocket"
+title: "Social Posts: You Can't Unit Test a Rocket"
 date: "2026-06-03"
 blog_url: "https://salilwalavalkar.github.io/blog/posts/2026-06-03-hardware-bottleneck-ai-cant-fix/"
 ---
