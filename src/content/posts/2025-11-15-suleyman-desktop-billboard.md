@@ -60,7 +60,7 @@ Around 38 minutes in, on what he predicted in his book:
 
 > that was about hallucinations and I predicted that they were going to be largely eliminated and I think pretty much we're on track. Pretty much they are.
 
-Both can't be fully true. Last month an assistant gave me a beautifully formatted config snippet with a flag that has never existed in any version of the tool. I lost an afternoon to it, because it looked exactly like the real flags around it. That's the problem with "pretty much." The 5% that's wrong is perfectly confident and wears the same font as the 95% that's right, and in a health chat nobody runs a unit test.
+Both can't be fully true. Anyone who has used a coding assistant has seen it produce a neatly formatted config snippet with a flag that doesn't exist, sitting among real flags and looking just like them. That's the problem with "pretty much." The 5% that's wrong is perfectly confident and wears the same font as the 95% that's right, and in a health chat nobody runs a unit test.
 
 **3. "It is going to remember everything... and be perfect." And he doesn't mind.**
 

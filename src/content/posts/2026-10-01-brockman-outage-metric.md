@@ -44,7 +44,7 @@ Marina asks whether OpenAI has an internal metric for how better models turn int
 
 Then: "It's so so cool."
 
-I remember the afternoon GitHub went down at a previous job and the whole floor went to lunch because nobody could push, pull or review. Nobody at that company put it in the quarterly report as proof of how much we loved Git. For OpenAI, staff depending on the model is the business model, so fine, enjoy it. But if your team has the same dependency on someone else's API, that's a risk to write down, with a fallback plan, before the two hours turn into a day.
+When GitHub goes down, plenty of engineering teams can't push, pull or review until it's back. Nobody reports that as proof of how much they love Git. For OpenAI, staff depending on the model is the business model, so fine, enjoy it. But if your team has the same dependency on someone else's API, that's a risk to write down, with a fallback plan, before the two hours turn into a day.
 
 **2. The same channel ran two opposite opinions on token leaderboards, one day apart.**
 
@@ -62,7 +62,7 @@ One of them sells tokens. One of them pays for tokens. Guess which is which. Bro
 
 > when I was at Stripe that we had a data team that you would send like an email to and then a week later they would come back with an answer to that that query and now I just ask the AI and it just does it.
 
-The agent now "issue[s] queries into our data warehouse" for retention curves and market growth. I believe it's faster. I've also written a confident-looking retention query with a join that double-counted every user who changed plans, and the only reason it didn't hit a board deck was a grumpy analyst who asked why churn had magically halved. Some of that week was queueing. Some of it was a person who knew where the bodies were buried in the schema. Brockman doesn't say who checks the agent's SQL.
+The agent now "issue[s] queries into our data warehouse" for retention curves and market growth. I believe it's faster. But retention queries are exactly where a confident-looking join quietly double-counts users who changed plans, and the usual safety net is an analyst who asks why churn suddenly halved. Some of that week was queueing. Some of it was a person who knew where the bodies were buried in the schema. Brockman doesn't say who checks the agent's SQL.
 
 ## The Post-Mortem / Verdict
 

@@ -51,7 +51,7 @@ Then Marina, about thirty seconds later, on the sycophancy:
 
 > It's always, it's the nicest person. Marina you're so amazing... I love that part.
 
-That's the whole adoption problem in two lines. The default product flatters you, the useful version has to be requested every time, and the people requesting it kind of miss the flattery. I've worked with engineers like this. The ones who said "LGTM" to everything were the most popular reviewers on the team and also the reason we had an incident channel.
+That's the whole adoption problem in two lines. The default product flatters you, the useful version has to be requested every time, and the people requesting it kind of miss the flattery. A code reviewer who says "LGTM" to everything is pleasant to work with and useless as a reviewer. Same deal here.
 
 **2. "Not a good answer machine, it's a good process machine" is the best line in the episode.**
 
@@ -69,7 +69,7 @@ And then, about the entry-level people who were supposed to grow into those mark
 
 > That is unbelievably hard. I'm not sure how to solve that problem.
 
-Credit for saying it plainly. But that's the load-bearing wall. I learned what good code looks like because a senior engineer took apart my 400-line pull request with a stored procedure hidden in it, line by line, in front of everyone. Nobody learns that from a tool that thought the stored procedure was a great idea. If the junior work goes to the model, the taste pipeline dries up in about five years, and then nobody's left who can steer.
+Credit for saying it plainly. But that's the load-bearing wall. Engineers mostly learn what good code looks like by having seniors pick apart their pull requests, line by line. A tool that approves whatever you hand it doesn't teach that. If the junior work goes to the model, the taste pipeline dries up in about five years, and then nobody's left who can steer.
 
 ## The Post-Mortem / Verdict
 

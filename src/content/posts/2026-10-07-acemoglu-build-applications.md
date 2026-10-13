@@ -46,7 +46,7 @@ His explanation for why coding agents took off before anything else is the clean
 
 Compare customer service, where everyone expected bots to win first and instead got what he calls "a nightmare," because requests are person-specific, phrased a hundred ways, and full of gray areas.
 
-He's right about the training signal. But anyone who's been on call knows that "it runs" and "it's correct" are different things. I once shipped a billing job that ran green every night for three months while rounding every invoice the wrong way. Every test passed. The checker for coding is only as good as your test suite, which is why the agents look so smart on greenfield demos and so much less smart on a ten-year-old codebase where the real spec lives in someone's head.
+He's right about the training signal. But anyone who's been on call knows that "it runs" and "it's correct" are different things. A billing job can run green every night while rounding every invoice the wrong way, as long as no test checks the rounding. The checker for coding is only as good as your test suite, which is why the agents look so smart on greenfield demos and so much less smart on a ten-year-old codebase where the real spec lives in someone's head.
 
 **2. He did the automation math, and the layoff posts lose.**
 
@@ -64,7 +64,7 @@ His bet on where the money is: high-quality data and applications. Not foundatio
 
 > I really don't see how you're going to make trillions of dollars from foundation models... we'll see some failed IPOs.
 
-Fine, that's a forecast and forecasts are cheap. The part I'd tape to the wall is the bit after it, that the tacit knowledge sits with the workers and "you can't just sit in your office in front of a computer... and come up with an application." I built an inventory tool once without ever visiting the warehouse it was for. Six weeks after launch the team was still using a clipboard, because scanning happened at a loading dock with no Wi-Fi and gloves on. One afternoon at the dock would have saved us a quarter.
+Fine, that's a forecast and forecasts are cheap. The part I'd tape to the wall is the bit after it, that the tacit knowledge sits with the workers and "you can't just sit in your office in front of a computer... and come up with an application." Software built without watching the people who'll use it tends to lose to a clipboard, because the real constraints (no Wi-Fi at the loading dock, gloves on) never show up in a requirements doc.
 
 ## The Post-Mortem / Verdict
 
