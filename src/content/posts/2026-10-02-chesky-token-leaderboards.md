@@ -43,7 +43,7 @@ Chesky gets the first half exactly right:
 
 Then the new number: "we're shipping 80% more features than a year ago. Most of it's because of AI." Things that used to take a year now take weeks.
 
-I've lived through this one. A previous team of mine got measured on tickets closed per sprint, and within a month the average ticket shrank to roughly "rename a variable." Nobody lied. They just split work into smaller pieces, because that's what the number asked for. Count features and you will get more features, and some of them will be laundry pickup in a city where nobody wanted laundry pickup. To be fair, he does add "are they high quality and are they successful?" and says Airbnb has metrics for that. I'd have liked to hear those metrics instead of the 80%.
+This is Goodhart's law with a fresh coat of paint. Measure a team on tickets closed and the tickets get smaller. Nobody has to lie, they just split the work, because that's what the number asks for. Count features and you will get more features, and some of them will be laundry pickup in a city where nobody wanted laundry pickup. To be fair, he does add "are they high quality and are they successful?" and says Airbnb has metrics for that. I'd have liked to hear those metrics instead of the 80%.
 
 **2. "A jet engine on the back of a bicycle" is the best description of chat UIs I've heard.**
 
