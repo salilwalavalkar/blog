@@ -12,7 +12,7 @@ A Nobel economist pitched AI for nurses and electricians to a tech company. The 
 
 Daron Acemoglu's take: last year's models were already good enough for most useful work. The problem is that every engineer in the Valley is busy making the model bigger, and nobody is building the tool a nurse or an electrician would actually use.
 
-He also did the layoff math. Automate 5% of jobs at half the cost and you save 2.5%. Make everyone 5% more productive and you get 5%. The "I replaced a hire with an agent" crowd may want to borrow a calculator.
+He also did the layoff math. Automate 5% of jobs at half the cost and you save 2.5%. Make everyone 5% more productive and you get 5%. The "instead of hiring someone, I deployed an agent" crowd may want to borrow a calculator.
 
 His advice to builders: go talk to the workers. Revolutionary. https://salilwalavalkar.github.io/blog/posts/2026-10-07-acemoglu-build-applications/
 

@@ -4,10 +4,10 @@ description: "A Nobel economist says last year's models were already good enough
 pubDatetime: 2026-10-07T09:00:00Z
 tags: ["ai", "economics", "engineering", "product", "rants"]
 draft: true
-sourceUrl: "https://www.youtube.com/watch?v=0lsasYuzhL4"
+sourceUrl: "https://marinamogilko.co/episode/0lsasYuzhL4/"
 ---
 
-Notes on [Silicon Valley Girl: Nobel Economist: Where He Sees the Real Money in AI](https://www.youtube.com/watch?v=0lsasYuzhL4), where [Marina Mogilko](https://marinamogilko.co/) talks to [Daron Acemoglu](https://economics.mit.edu/people/faculty/daron-acemoglu) (MIT economist, 2024 Nobel laureate in Economic Sciences).
+Notes on [Silicon Valley Girl: Nobel Economist: How to Stay Valuable as AI Changes Work](https://marinamogilko.co/episode/0lsasYuzhL4/), where [Marina Mogilko](https://marinamogilko.co/) talks to [Daron Acemoglu](https://economics.mit.edu/people/faculty/daron-acemoglu) (MIT economist, 2024 Nobel laureate in Economic Sciences).
 
 ## The 30-Second Reality Check
 
@@ -68,7 +68,7 @@ Fine, that's a forecast and forecasts are cheap. The part I'd tape to the wall i
 
 ## The Post-Mortem / Verdict
 
-This is the third AI episode from this channel in a week, after [Greg Brockman](https://www.youtube.com/watch?v=qy8Gr27yLMk) and [Brian Chesky](https://www.youtube.com/watch?v=iJlyNupMOzA), and it's the only guest who doesn't sell the stuff. You can tell. He admits he's "behind the frontier," does his math by hand, and won't let students who speak English as a second language use AI to write for them, only to check their sentences.
+This is the third AI episode from this channel in a week, after [Greg Brockman](https://marinamogilko.co/episode/qy8Gr27yLMk/) and [Brian Chesky](https://marinamogilko.co/episode/iJlyNupMOzA/), and it's the only guest who doesn't sell the stuff. You can tell. He admits he's "behind the frontier," does his math by hand, and won't let students who speak English as a second language use AI to write for them, only to check their sentences.
 
 He is blunt about schools, too. He called it "a dangerous huge social experiment to unleash generative AI on schools without any guardrails" in 2023 or 2024 (he isn't sure which), and he thinks the result has come "pretty close" to his worst fears. His career advice is to study math, physics, economics and engineering, and he means it, AI solving hard math problems or not.
 
@@ -78,8 +78,8 @@ The best line goes to whoever at a tech company told him, after he pitched AI th
 
 ## Links & References
 
-- [Nobel Economist: Where He Sees the Real Money in AI](https://www.youtube.com/watch?v=0lsasYuzhL4), Silicon Valley Girl on YouTube, 6 Oct 2026
+- [Nobel Economist: How to Stay Valuable as AI Changes Work | Daron Acemoglu](https://marinamogilko.co/episode/0lsasYuzhL4/), Silicon Valley Girl Podcast, 6 Oct 2026
 - Daron Acemoglu (guest), MIT economist and 2024 Nobel laureate in Economic Sciences: [MIT Economics](https://economics.mit.edu/people/faculty/daron-acemoglu) · [X](https://x.com/DAcemogluMIT) · [Nobel Prize facts](https://www.nobelprize.org/prizes/economic-sciences/2024/acemoglu/facts/)
 - Marina Mogilko (host), Silicon Valley Girl: [Website](https://marinamogilko.co/) · [YouTube](https://www.youtube.com/@SiliconValleyGirl) · [X](https://x.com/siliconvalleymm) · [Instagram](https://www.instagram.com/siliconvalleygirl/)
 - [Erik Brynjolfsson](https://digitaleconomy.stanford.edu/person/erik-brynjolfsson/), the Stanford economist whose study Marina cites on AI's muted economic impact so far
-- Earlier episodes in the same run: [Greg Brockman](https://www.youtube.com/watch?v=qy8Gr27yLMk) and [Brian Chesky](https://www.youtube.com/watch?v=iJlyNupMOzA)
+- Earlier episodes in the same run: [Greg Brockman](https://marinamogilko.co/episode/qy8Gr27yLMk/) and [Brian Chesky](https://marinamogilko.co/episode/iJlyNupMOzA/)
