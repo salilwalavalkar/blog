@@ -4,10 +4,10 @@ description: "Mustafa Suleyman wants your AI to replace the apps, the browser an
 pubDatetime: 2025-11-15T09:00:00Z
 tags: ["ai", "microsoft", "privacy", "engineering", "rants"]
 draft: true
-sourceUrl: "https://www.youtube.com/watch?v=SP76PvgMzVU"
+sourceUrl: "https://marinamogilko.co/episode/SP76PvgMzVU/"
 ---
 
-Notes on [Silicon Valley Girl: CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever](https://www.youtube.com/watch?v=SP76PvgMzVU), where [Marina Mogilko](https://marinamogilko.co/) talks to [Mustafa Suleyman](https://x.com/mustafasuleyman) (CEO of Microsoft AI, DeepMind co-founder, author of *The Coming Wave*).
+Notes on [Silicon Valley Girl: CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever](https://marinamogilko.co/episode/SP76PvgMzVU/), where [Marina Mogilko](https://marinamogilko.co/) talks to [Mustafa Suleyman](https://x.com/mustafasuleyman) (CEO of Microsoft AI, DeepMind co-founder, author of *The Coming Wave*).
 
 ## The 30-Second Reality Check
 
@@ -48,7 +48,7 @@ This is the part where I laughed out loud:
 
 > when you open your computer, you kind of have a billboard of all these different competing apps that are like, "Use me, try me"... it's kind of distracting. It's kind of ugly.
 
-Correct! And Windows is where a lot of us first met that billboard. Candy Crush preinstalled in the Start menu, "suggested" apps, the tips that are ads. His answer is that the operating system, the browser, the search engine and the apps "are going to slip away" behind your personal AI. Which is a very Microsoft way of solving the ads-in-the-Start-menu problem. You don't remove the billboard. You become the only thing on it.
+Correct! And Windows is where a lot of us first met that billboard. Candy Crush preinstalled in the Start menu, "suggested" apps, the tips that are ads. His answer is that the operating system, the browser, the search engine and the apps "are gonna slip away" behind your personal AI. Which is a very Microsoft way of solving the ads-in-the-Start-menu problem. You don't remove the billboard. You become the only thing on it.
 
 **2. Hallucinations are "pretty much" eliminated. Also, please go see a doctor.**
 
@@ -78,7 +78,7 @@ His own setup is the iPhone power button wired straight to Copilot voice mode, j
 
 The first answer of the interview sets the tone. Marina asks if we're in an AI bubble:
 
-> Uh, yes. So, no, we're not.
+> Yes. So no, we're not. I think so. I don't think so.
 
 After that he's very bullish, and certain about things nobody is certain about, such as "I think we can prove that it doesn't have subjective experience." And then oddly careful elsewhere.
 
@@ -88,7 +88,7 @@ The episode ends on Copilot Groups, up to 32 people in one chat, where your AI d
 
 ## Links & References
 
-- [CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever](https://www.youtube.com/watch?v=SP76PvgMzVU), Silicon Valley Girl on YouTube, 14 Nov 2025
+- [CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever | Mustafa Suleyman](https://marinamogilko.co/episode/SP76PvgMzVU/), Silicon Valley Girl Podcast, 14 Nov 2025
 - Mustafa Suleyman (guest), CEO of Microsoft AI and DeepMind co-founder: [X](https://x.com/mustafasuleyman) · [Instagram](https://www.instagram.com/mustafasuleymanai)
 - Marina Mogilko (host), Silicon Valley Girl: [Website](https://marinamogilko.co/) · [YouTube](https://www.youtube.com/@SiliconValleyGirl) · [Instagram](https://www.instagram.com/siliconvalleygirl/)
 - [The Coming Wave](https://www.the-coming-wave.com/), Suleyman's book
