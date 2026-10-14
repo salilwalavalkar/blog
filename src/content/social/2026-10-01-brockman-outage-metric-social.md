@@ -18,6 +18,6 @@ The rule-of-five automation advice is good though. https://salilwalavalkar.githu
 
 ## 🐘 Mastodon
 
-Notes on Greg Brockman on Silicon Valley Girl. Good: automate a task only after you've done it by hand five times, and build products that improve when models improve, not ones that patch around current model limits. Bad: "people can't work during a 2h model outage" offered as proof of productivity. That's a hard dependency with no fallback. Also bad: an agent querying the data warehouse that used to take a data team a week, with no mention of who reviews the SQL. https://salilwalavalkar.github.io/blog/posts/2026-10-01-brockman-outage-metric/
+Notes on Greg Brockman on Silicon Valley Girl. Good: automate a task only after you've done it by hand five times, and build products that improve when models improve, not ones that patch around current model limits. Bad: people not being able to work during a two-hour model outage, offered as proof of productivity. That's a hard dependency with no fallback. Also bad: an agent querying the data warehouse that used to take a data team a week, with no mention of who reviews the SQL. https://salilwalavalkar.github.io/blog/posts/2026-10-01-brockman-outage-metric/
 
 #AI #SRE #DevOps #Reliability #OpenAI

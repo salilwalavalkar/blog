@@ -6,11 +6,11 @@ blog_url: "https://salilwalavalkar.github.io/blog/posts/2026-10-02-chesky-token-
 
 ## 🐦 X / Twitter
 
-Airbnb's CEO admits token leaderboards were a bad idea. The replacement metric is "we ship 80% more features." Same idea, new dashboard. https://salilwalavalkar.github.io/blog/posts/2026-10-02-chesky-token-leaderboards/
+Airbnb's CEO admits token leaderboards were a bad idea. The replacement metric is "we're shipping 80% more features." Same idea, new dashboard. https://salilwalavalkar.github.io/blog/posts/2026-10-02-chesky-token-leaderboards/
 
 ## 🧵 Threads
 
-Brian Chesky on how companies measured AI adoption this year. First, token leaderboards that shamed people who weren't burning enough tokens. Then, "wait, why are we spending so much money on AI?"
+Brian Chesky on how companies measured AI adoption this year. First, token leaderboards that shamed people who weren't burning enough tokens. Then, "wait a second. Why are we spending so much money on AI?"
 
 The fix is product velocity. Airbnb ships 80% more features than a year ago. Anyone who's been measured on tickets closed knows how this goes. The tickets just get smaller.
 

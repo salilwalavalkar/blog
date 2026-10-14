@@ -4,10 +4,10 @@ description: "Airbnb's CEO retired the dumbest AI metric of the year and replace
 pubDatetime: 2026-10-02T09:00:00Z
 tags: ["ai", "engineering", "metrics", "product", "rants"]
 draft: true
-sourceUrl: "https://www.youtube.com/watch?v=iJlyNupMOzA"
+sourceUrl: "https://marinamogilko.co/episode/iJlyNupMOzA/"
 ---
 
-Notes on [Silicon Valley Girl: Brian Chesky: People Who Know What to Build With AI Will Pull Ahead](https://www.youtube.com/watch?v=iJlyNupMOzA), where [Marina Mogilko](https://marinamogilko.co/) finally gets [Brian Chesky](https://x.com/bchesky) (co-founder and CEO of Airbnb) on the podcast, seven years after chasing him down at LAX.
+Notes on [Silicon Valley Girl: $95B Airbnb CEO: The Gap Is Growing — What It Takes to Be a Top Performer Now](https://marinamogilko.co/episode/iJlyNupMOzA/), where [Marina Mogilko](https://marinamogilko.co/) finally gets [Brian Chesky](https://x.com/bchesky) (co-founder and CEO of Airbnb) on the podcast, seven years after chasing him down at LAX.
 
 ## The 30-Second Reality Check
 
@@ -18,9 +18,9 @@ Brian Chesky says chat is the wrong interface for AI and token leaderboards were
 ```
   Start of 2026              Then                           Now
   ─────────────              ────                           ───
-  "You got to use AI"   ──▶  "Wait, why are we        ──▶  "We look at product
-                              spending so much              velocity"
-  token leaderboards          money on AI?"
+  "You've got to use AI" ──▶ "Why are we spending      ──▶  "We look at product
+                              so much money on AI?"         velocity"
+  token leaderboards
   (shame the low                                            features shipped: +80%
    token users)                                             "are they high quality
                                                              and successful?"
@@ -39,7 +39,7 @@ Brian Chesky says chat is the wrong interface for AI and token leaderboards were
 
 Chesky gets the first half exactly right:
 
-> there were like token leaderboards. That might have been a good thing to do for a couple months just to make sure people were using AI, but that was clearly like a long-term strategy that was not going to work.
+> There were token leaderboards. That might have been a good thing to do for a couple months, just to make sure people were using AI. But that was clearly a long-term strategy that was not going to work.
 
 Then the new number: "we're shipping 80% more features than a year ago. Most of it's because of AI." Things that used to take a year now take weeks.
 
@@ -55,7 +55,7 @@ His reasoning holds up for travel. The average booking is three people. You're c
 
 Airbnb's own answer is an AI search toggle that is, in his words, "an interface that wasn't a chatbot, but that felt chat-like." So, a chatbot. With filters. That's actually fine, and it's more honest product thinking than most AI launch decks I've seen.
 
-**3. "The ultimate democracy" and "the gap is getting bigger" were said about the same tools, about forty seconds apart.**
+**3. "The ultimate democracy" and "the performance gap is greater with AI" were said about the same tools, about a minute apart.**
 
 > AI is the ultimate democracy. The tools that Airbnb has is the tools every company in the world has.
 
@@ -67,9 +67,9 @@ Both are probably true, and he doesn't seem bothered that they pull in opposite 
 
 ## The Post-Mortem / Verdict
 
-The bit the video's timestamp points at is the idea-volume stuff, and it's the most useful part. Linus Pauling's line, "the best way to have a good idea is to have a lot of ideas." A notebook, about a thousand words a day, no editing. At the end of each day he bolds the five to ten lines that jump out, and once a month an AI reads only the bolded lines and looks for patterns. Good ideas "haunt you like ghosts" and keep coming back. That's a real workflow you could copy tomorrow.
+The bit the video's timestamp points at is the idea-volume stuff, and it's the most useful part. Linus Pauling's line, "the best way to have a good idea is to have [a] lot of ideas." A notebook, about a thousand words a day, no editing. At the end of each day he bolds the five to ten lines that jump out, and once a month an AI reads only the bolded lines and looks for patterns. Good ideas "haunt you like ghosts" and keep coming back. That's a real workflow you could copy tomorrow.
 
-The numbers get loose, though. "A hundred thousand ideas a year, and I think 99,000 are really bad" becomes 30,000 a year about a minute later, once he does the arithmetic out loud. And "technology doubles every year for 10 years, that's a thousand X" turns into "the beginning of a thousand-year cycle" two sentences later, on the way to "there's going to be 50 more Anthropics, maybe 100." Thousand-x and thousand years are different units, Brian.
+The numbers get loose, though. "I probably, not exaggerating, have 100,000 ideas a year, and I think 99,000 are really bad" becomes 30,000 a year about a minute later, once he does the arithmetic out loud. And "if technology doubles every year for 10 years, that's a 1000X" turns into "the beginning of a thousand-year cycle" in the very next sentence, right after "there's gonna be 50 more Anthropics, maybe 100." Thousand-x and thousand years are different units, Brian.
 
 Also in the episode: attention span is "commensurate with screen size," which is why you don't leave an IMAX for the bathroom. And a new Airbnb feature that shows where all your friends are traveling this summer. Some of us would call that a threat model.
 
@@ -77,7 +77,7 @@ The nicest moment is the last one. The CEO of a $95 billion company admits he wa
 
 ## Links & References
 
-- [Brian Chesky: People Who Know What to Build With AI Will Pull Ahead](https://www.youtube.com/watch?v=iJlyNupMOzA), Silicon Valley Girl on YouTube, 1 Oct 2026
+- [$95B Airbnb CEO: The Gap Is Growing — What It Takes to Be a Top Performer Now | Brian Chesky](https://marinamogilko.co/episode/iJlyNupMOzA/), Silicon Valley Girl Podcast, 1 Oct 2026
 - Brian Chesky (guest), co-founder and CEO of Airbnb: [X](https://x.com/bchesky) · [LinkedIn](https://www.linkedin.com/in/brianchesky/) · [Instagram](https://www.instagram.com/bchesky/)
 - Marina Mogilko (host), Silicon Valley Girl: [Website](https://marinamogilko.co/) · [YouTube](https://www.youtube.com/@SiliconValleyGirl) · [Instagram](https://www.instagram.com/siliconvalleygirl/)
 - [Airbnb Newsroom](https://news.airbnb.com/), for the AI search, services and travel-graph announcements

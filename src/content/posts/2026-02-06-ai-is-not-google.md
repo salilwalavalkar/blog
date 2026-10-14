@@ -4,10 +4,10 @@ description: "Forty minutes on AI adoption that boils down to two prompts and on
 pubDatetime: 2026-02-06T09:00:00Z
 tags: ["ai", "llm", "careers", "rants"]
 draft: true
-sourceUrl: "https://www.youtube.com/watch?v=_aUKWYHLKfE"
+sourceUrl: "https://marinamogilko.co/episode/_aUKWYHLKfE/"
 ---
 
-Notes on [Silicon Valley Girl: Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes](https://www.youtube.com/watch?v=_aUKWYHLKfE), where [Marina Mogilko](https://marinamogilko.co/) talks to [Conor Grennan](https://www.ai-mindset.com/) (Chief AI Architect at NYU Stern, founder of AI Mindset).
+Notes on [Silicon Valley Girl: Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes](https://marinamogilko.co/episode/_aUKWYHLKfE/), where [Marina Mogilko](https://marinamogilko.co/) talks to [Conor Grennan](https://www.ai-mindset.com/) (Chief AI Architect at NYU Stern, founder of AI Mindset).
 
 ## The 30-Second Reality Check
 
@@ -85,6 +85,6 @@ Somewhere in the middle there's also a sponsor read for Miro Flows where "the en
 
 ## Links & References
 
-- [Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan](https://www.youtube.com/watch?v=_aUKWYHLKfE), Silicon Valley Girl on YouTube, 5 Feb 2026
+- [Chief AI Architect: How to Make AI Your Strategic Partner in 40 Minutes | Conor Grennan](https://marinamogilko.co/episode/_aUKWYHLKfE/), Silicon Valley Girl Podcast, 5 Feb 2026
 - Conor Grennan (guest), Chief AI Architect at NYU Stern and founder of AI Mindset: [AI Mindset](https://www.ai-mindset.com/) · [LinkedIn](https://www.linkedin.com/in/conorgrennan/) · [X](https://x.com/conorgrennan)
 - Marina Mogilko (host), Silicon Valley Girl: [Website](https://marinamogilko.co/) · [YouTube](https://www.youtube.com/@SiliconValleyGirl) · [Instagram](https://www.instagram.com/siliconvalleygirl/)

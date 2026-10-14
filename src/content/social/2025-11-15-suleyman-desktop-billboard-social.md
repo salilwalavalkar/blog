@@ -6,11 +6,11 @@ blog_url: "https://salilwalavalkar.github.io/blog/posts/2025-11-15-suleyman-desk
 
 ## 🐦 X / Twitter
 
-Microsoft's AI CEO says your desktop is "a billboard of all these competing apps" and "kind of ugly." He's right. Wait until he hears who shipped Candy Crush in the Start menu. https://salilwalavalkar.github.io/blog/posts/2025-11-15-suleyman-desktop-billboard/
+Microsoft's AI CEO says your desktop is "a billboard of all these different competing apps" and "kind of ugly." He's right. Wait until he hears who shipped Candy Crush in the Start menu. https://salilwalavalkar.github.io/blog/posts/2025-11-15-suleyman-desktop-billboard/
 
 ## 🧵 Threads
 
-Mustafa Suleyman on Silicon Valley Girl. Asked if we're in an AI bubble: "Uh, yes. So, no, we're not." Strong start.
+Mustafa Suleyman on Silicon Valley Girl. Asked if we're in an AI bubble: "Yes. So no, we're not. I think so. I don't think so." Strong start.
 
 Later he says AI hallucinations are "pretty much" eliminated. About twenty minutes earlier he said Copilot's health answers make mistakes and "you can't rely on it yet." Health is 40% of Copilot queries. Pick one.
 
