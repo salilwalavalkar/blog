@@ -3,7 +3,7 @@ title: "Microsoft's AI Chief Notices the Desktop Is Full of Ads"
 description: "Mustafa Suleyman wants your AI to replace the apps, the browser and the billboard his own company built."
 pubDatetime: 2025-11-15T09:00:00Z
 tags: ["ai", "microsoft", "privacy", "engineering", "rants"]
-draft: true
+draft: false
 sourceUrl: "https://marinamogilko.co/episode/SP76PvgMzVU/"
 ---
 

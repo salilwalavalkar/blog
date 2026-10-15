@@ -3,7 +3,7 @@ title: "Token Leaderboards Are Dead. Long Live the Feature Count."
 description: "Airbnb's CEO retired the dumbest AI metric of the year and replaced it with the second dumbest."
 pubDatetime: 2026-10-02T09:00:00Z
 tags: ["ai", "engineering", "metrics", "product", "rants"]
-draft: true
+draft: false
 sourceUrl: "https://marinamogilko.co/episode/iJlyNupMOzA/"
 ---
 

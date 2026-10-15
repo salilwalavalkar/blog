@@ -3,7 +3,7 @@ title: "OpenAI Measures Productivity by How Loud the Outage Gets"
 description: "OpenAI's president says the best sign AI is working is that nobody can work without it. SREs have another name for that."
 pubDatetime: 2026-10-01T09:00:00Z
 tags: ["ai", "engineering", "reliability", "metrics", "rants"]
-draft: true
+draft: false
 sourceUrl: "https://marinamogilko.co/episode/qy8Gr27yLMk/"
 ---
 

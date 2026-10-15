@@ -3,7 +3,7 @@ title: "Stop Googling Your Chatbot"
 description: "Forty minutes on AI adoption that boils down to two prompts and one unsolved problem nobody wants to talk about."
 pubDatetime: 2026-02-06T09:00:00Z
 tags: ["ai", "llm", "careers", "rants"]
-draft: true
+draft: false
 sourceUrl: "https://marinamogilko.co/episode/_aUKWYHLKfE/"
 ---
 
