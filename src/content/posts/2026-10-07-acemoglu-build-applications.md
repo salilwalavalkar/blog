@@ -3,7 +3,7 @@ title: "Stop Building God and Go Build Something for Electricians"
 description: "A Nobel economist says last year's models were already good enough, and the industry is spending its engineers on the wrong layer."
 pubDatetime: 2026-10-07T09:00:00Z
 tags: ["ai", "economics", "engineering", "product", "rants"]
-draft: true
+draft: false
 sourceUrl: "https://marinamogilko.co/episode/0lsasYuzhL4/"
 ---
 
