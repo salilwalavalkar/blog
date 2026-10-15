@@ -7,7 +7,7 @@ draft: true
 sourceUrl: "https://marinamogilko.co/episode/SP76PvgMzVU/"
 ---
 
-Notes on [Silicon Valley Girl: CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever](https://marinamogilko.co/episode/SP76PvgMzVU/), where [Marina Mogilko](https://marinamogilko.co/) talks to [Mustafa Suleyman](https://x.com/mustafasuleyman) (CEO of Microsoft AI, DeepMind co-founder, author of *The Coming Wave*).
+Notes on [Silicon Valley Girl: CEO of Microsoft AI: The Next 10 Years Will Change Humanity Forever](https://marinamogilko.co/episode/SP76PvgMzVU/), where [Marina Mogilko](https://marinamogilko.co/) talks to [Mustafa Suleyman](https://x.com/mustafasuleyman) (CEO of Microsoft AI, DeepMind co-founder, author of _The Coming Wave_).
 
 ## The 30-Second Reality Check
 
